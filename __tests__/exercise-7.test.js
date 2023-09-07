@@ -1,7 +1,6 @@
 // We import (require) the function that we want to test.
 const insert = require("../workshop/exercise-7");
 
-// Write 3 more expect functions to test the function you just wrote.
 test("Exercise 7", () => {
     expect(
         insert([{ name: "Bob" }, { name: "Josie" }], { isAvailable: false })
@@ -15,7 +14,6 @@ test("Exercise 7", () => {
         { name: "Bob"},
         { name: "Josie"},
     ]);
-    // add more tests here...
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
