@@ -4,6 +4,8 @@
 
 const convertToString = (arr) => {
   // Insert missing solution please
+  let arr2 = arr.map((value) => String(value));
+return arr2;
 };
 
 // We need to export the function in order for our unit test to have access to it.
