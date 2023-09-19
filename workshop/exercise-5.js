@@ -8,7 +8,12 @@
 
 const getLetterAtIndex = (str, index) => {
   // Your code here
-}
+  if ( index >= str.length || typeof str !== "string") {
+    return undefined
+  } 
+    return str.charAt(index)
+  }
+
 
 // We need to export the function in order for our unit test to have access to it.
 module.exports = getLetterAtIndex;
