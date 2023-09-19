@@ -8,6 +8,13 @@
 
 const lastCharacter = (str) => {
   // Your code here
+  if ( str === ""){
+    return undefined
+  } else if ( typeof str !== "string"){
+    return undefined
+  } else {
+    return str.charAt(str.length-1)
+  }
 }
 
 // We need to export the function in order for our unit test to have access to it.
