@@ -7,6 +7,11 @@
 
 const firstLetter = (str) => {
   // Your code here
+  if ( str === ""){
+  return undefined;
+} 
+return str.charAt(0);
+
 }
 
 // We need to export the function in order for our unit test to have access to it.
