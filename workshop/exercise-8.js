@@ -7,6 +7,13 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+if (nums.length === 0){
+  return undefined;
+}
+
+return nums.filter((num) => typeof num === "number").map((num) => num ** 2).reduce((sum, num) => sum + num, 0);
+
+
 };
 
 // We need to export the function in order for our unit test to have access to it.
