@@ -10,6 +10,10 @@
 
 const sum = (num1, num2) => {
   // Your code here
+  if (typeof num1 !== "number" || typeof num2 !== "number"){
+    return undefined
+  } 
+  return num1 + num2
 }
 
 // We need to export the function in order for our unit test to have access to it.
