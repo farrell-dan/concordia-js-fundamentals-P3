@@ -8,7 +8,13 @@
 
 const sum = (arr) => {
   // your code here
-}
-
+  let total = 0;
+  if (arr.length === 0 || !arr.every((number) => typeof number === "number")){
+    return undefined;
+  } else arr.forEach((number) => {
+    total += number;
+  });
+    return total
+};
 // We need to export the function in order for our unit test to have access to it.
 module.exports = sum;
