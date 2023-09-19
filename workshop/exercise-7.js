@@ -14,6 +14,10 @@
 
 const insert = (arr, obj) => {
   // Insert missing solution please
+  if (typeof obj !== "object"){
+    return arr
+  }
+  return arr.map((object) => ({...object, ...obj}));
 };
 
 // We need to export the function in order for our unit test to have access to it.
